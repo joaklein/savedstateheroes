@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*
+Theme Name: Saved State Heroes
+Theme URI: https://wordpress.org/themes/savedstateheroes/
+Author: Josh Klein
+Author URI: https://www.jklein.me/
+Version: 1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=VT323&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    background: #333 fixed url('assets/images/asfalt-light.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+
+header h4 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 10px turquoise;
+    height: 54px;
+    transition-duration: 0.3s;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    font-family: VT323;
+    font-size: 42px;
+}
+
+.pages li {
+    margin-right: 0.5em;
+}
+
+.pages li:last-child {
+    margin-right: 0
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    right: 0;
+    top: 0;
+    height: 54px;
+}
+
+.socials li {
+    display: inline;
+    margin: auto 0;
+    font-size: 44px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+    padding: 0;
+    transition-duration: 0.3s;
+}
+
+a:hover {
+    color: turquoise;
+    text-shadow: -1px -1px teal, 1px -1px teal, -1px 1px teal, 1px 1px teal;
+    transition-duration: 0.3s;
+}
+
+.socials a:hover {
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+    transition-duration: 0.3s;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 768px;
+    box-shadow: 0 0 10px turquoise;
+}
+
+audio {
+    width: 80%;
+}
+
+.ssh-nav-logo {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 2px 10px;
+}
+
+#podcast-list {
+    text-align: center;
+}
+
+.ssh-header-1 {
+    font-family: VT323;
+    font-size: 10em;
+    margin: 0;
+    color: turquoise;
+    text-shadow: -1px -1px black, 1px -1px black, -1px 1px black, 1px 1px black;
+}
+
+.ssh-header-2 {
+    font-family: Allura;
+    font-size: 8em;
+    margin: -0.8em 0 0.2em 0;
+    rotate: -10deg;
+    color: hotpink;
+    text-shadow: 0 0 20px hotpink, -1px -1px orchid, 1px -1px orchid, -1px 1px orchid, 1px 1px orchid;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.item img {
+    max-width: 85%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.item p {
+    margin-top: 0;
+}
+
+.fa-discord {
+    color: #7289da;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.pages-mobile {
+    display: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        margin-top: 45px;
+    }
+    section {
+        max-width: 90%;
+    }
+    .ssh-header-1 {
+        font-size: 6em;
+    }
+    .ssh-header-2 {
+        font-size: 4em;
+    }
+    .ssh-nav-logo {
+        height: 40px;
+        width: auto;
+        margin: 8px 10px;
+    }
+    .socials li {
+        font-size: 30px;
+    }
+    .pages {
+        display: none;
+        font-size: 30px;
+    }
+    .pages-mobile {
+        display: flex;
+    }
+    .pages-show {
+        display: flex;
+    }
+    .nav-open {
+        height: 108px;
+    }
+}
